@@ -1,0 +1,65 @@
+.BlogGallery {
+	display: grid;
+	gap: 3em;
+}
+
+/* we use narrow container for blog because pictures resolution is not suffiicient to alogn them in 3 columns on large screens without stretching and blurring */
+
+.BlogGallery .gallery {
+	/* 🕮 <ltc> f36811ae-fd32-43c1-b961-16c8952237ff.md */
+	align-content: center;
+
+	/* COLUMNS LAYOUT */
+	/* columns - column-width (sets minimum column width) + columns-count (maximum columns count) */
+	columns: 300px 3;
+	gap: 2em;
+}
+
+.BlogEntry {
+	border-bottom: 3px solid black;
+	break-inside: avoid; /* ! */
+	margin-bottom: 1em;
+}
+
+.BlogEntry img,
+.BlogEntry video {
+	max-width: 100%;
+	width: 100%;
+}
+
+.BlogEntry__footer,
+.BlogEntry__main {
+	margin: 1em 0;
+	display: grid;
+	gap: 1em;
+}
+
+.BlogEntry__media {
+	width: 100%;
+}
+
+.BlogEntry__footer {
+	text-transform: uppercase;
+	color: grey;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.BlogEntry__main {
+	width: min-content;
+	min-width: 100%;
+}
+
+.BlogGallery__button {
+	justify-self: center;
+}
+
+.BlogEntry hr {
+	color: lightgray;
+}
+
+.BlogEntry .--fa-icon--small::before {
+	font-size: 12px;
+	margin-right: 0.5em;
+}

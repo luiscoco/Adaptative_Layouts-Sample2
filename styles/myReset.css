@@ -1,0 +1,30 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+a {
+	display: block;
+}
+
+button {
+	border: 0 none;
+	background: none;
+}
+
+/* 🕮 <ltc> eee6d48e-9a9f-43f4-862e-edd2b8fac896.md */
+button,
+input {
+	line-height: inherit;
+}
+
+hr {
+	margin: 0;
+}

@@ -1,0 +1,21 @@
+.Partners__gallery {
+	justify-content: space-evenly;
+	gap: 2em;
+}
+
+.Partners__gallery .gallery__item {
+	overflow: hidden;
+	flex: none;
+}
+
+.Partners__gallery img {
+	width: 150px;
+	height: 150px;
+	object-position: center;
+	object-fit: none;
+}
+
+.Partners .chapter__main {
+	display: grid;
+	place-content: center;
+}

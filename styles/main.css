@@ -1,0 +1,42 @@
+@import 'reset.css';
+@import 'myReset.css';
+@import 'fonts.css';
+@import 'shared.css';
+@import 'gallery.css';
+
+@import 'Intro.css';
+@import 'Awards.css';
+@import 'Navigation.css';
+@import 'Areas.css';
+@import 'Ideas.css';
+@import 'Team.css';
+@import 'Offers.css';
+@import 'Feedback.css';
+@import 'Featured.css';
+@import 'Subscription.css';
+@import 'Contact.css';
+@import 'Partners.css';
+@import 'Blog.css';
+@import 'Portfolio.css';
+
+body {
+	display: grid;
+	gap: 120px;
+	grid: auto / 1fr;
+	/* 🕮 <ltc> c5cc72ac-30c8-444b-9ebd-b523fba98c47.md */
+}
+
+.header,
+.main {
+	display: grid;
+	grid: auto / 1fr;
+	justify-content: center;
+}
+
+.header {
+	gap: 1rem;
+}
+
+.main {
+	gap: 10rem;
+}

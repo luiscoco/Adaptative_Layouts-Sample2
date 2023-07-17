@@ -1,0 +1,47 @@
+/* GALLERIES */
+
+/* 🕮 <ltc> f4ccbac7-e6a8-4e13-8d8d-33e81c02fa57.md */
+
+.gallery--inline {
+	/* 🕮 <ltc> f48d0d51-8ecd-4997-bc57-79da4926093d.md */
+	text-align: justify;
+	/* 🕮 <ltc> a93b30d4-fff1-4412-878f-b66d1911966b.md */
+	text-align-last: justify;
+	/* 🕮 <ltc> 10d72e16-80ff-45ea-b67d-60532b4dbbc4.md */
+	line-height: 1;
+	/* 🕮 <ltc> 1c1fcfc3-7ac0-4065-a250-3cd96622cbfc.md */
+}
+
+.gallery--inline > .gallery__item {
+	display: inline-block;
+	text-align: initial;
+	text-align-last: initial;
+	vertical-align: middle;
+}
+/* 🕮 <ltc> 39c27b4a-a4dc-4c34-931c-0e82ebd81e3e.md */
+.Areas .gallery--inline > .gallery__item:nth-child(n + 3) {
+	margin-top: 7px;
+}
+/* 🕮 <ltc> 22386bfe-9d97-4342-be3c-8235726ff2bd.md */
+.Team .gallery--inline > .gallery__item:nth-child(n + 7) {
+	margin-top: 7px;
+}
+
+/* 🕮 <ltc> fc258277-51cb-4922-bfe1-2e82b214708e.md */
+
+.gallery--flex {
+	/* 🕮 <ltc> bcda999c-41a8-444d-ae2f-ff2a2a982c14.md */
+	display: flex;
+	flex-wrap: wrap;
+	/* 🕮 <ltc> 95883b43-326b-409a-a67a-7d383aac523c.md */
+}
+
+.gallery--flex > .gallery__item {
+	flex-grow: 1;
+}
+
+.gallery--grid {
+	display: grid;
+	justify-content: center;
+	/* 🕮 <ltc> 1b7f35fb-dd9b-40a3-9927-3784d0ff8274.md */
+}

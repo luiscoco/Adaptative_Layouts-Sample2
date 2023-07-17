@@ -1,0 +1,38 @@
+.Areas__gallery {
+	grid: auto auto / auto auto;
+	gap: 1em;
+	margin-right: 2em;
+	/* 🕮 <ltc> b53b8a22-0948-461e-83e9-1805d2b7ddb7.md */
+}
+
+.Areas__description {
+	flex: 1;
+	/* 🕮 <ltc> 3da1904f-af78-4ae1-bff0-45fb81b051a4.md */
+}
+
+.Areas__description,
+.Areas__description .c-text {
+	display: grid;
+	gap: 1em;
+	justify-items: start;
+	text-align: justify;
+}
+
+.Areas .chapter__main {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+	gap: 3em;
+	justify-content: center;
+}
+
+.Areas .card__name {
+	bottom: 1em;
+	left: 1em;
+	width: 8em;
+	line-height: inherit;
+}
+
+.Areas img {
+	max-width: 100%;
+}

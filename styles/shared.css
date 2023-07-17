@@ -1,0 +1,168 @@
+.--text-colored {
+	color: #f48e0b;
+}
+
+.--decorated::after {
+	/* margin: 3em auto; */
+	margin: 50px auto 0;
+	display: block;
+	content: '';
+	width: 62px;
+	height: 4px;
+	background: #f48e0b;
+	border-radius: 5px;
+}
+
+/* 🕮 <ltc> 0cba9777-0757-4d56-8371-4a9a2bdeacf7.md */
+.--background-dark {
+	color: white;
+	background: #333;
+}
+
+.bar--grid {
+	display: grid;
+	gap: 1em;
+	grid-auto-flow: column;
+	width: max-content;
+}
+
+.bar--flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+/* 🕮 <ltc> aad17174-f8dc-43ff-a546-033b096943f7.md */
+
+.chapter {
+	display: grid;
+	gap: 3rem;
+	/* justify-items: center; */
+}
+
+.chapter__header {
+	display: grid;
+	place-content: center;
+}
+
+.chapter__header .l-core {
+	display: grid;
+	gap: 30px;
+	text-align: center;
+}
+
+.card {
+	position: relative;
+}
+.card__name {
+	position: absolute;
+}
+
+.card__name span {
+	margin-left: 0.25em;
+}
+
+.card__name--normal {
+	padding: 0.5em 0.5em;
+	text-align: center;
+	border-radius: 0.5em;
+}
+
+.card__photo {
+	max-width: 100%;
+}
+
+.button {
+	width: max-content;
+}
+
+.button--normal {
+	text-transform: capitalize;
+	padding: 1em 2em;
+	color: white;
+	background: #f48e0b;
+	width: max-content;
+	transition: 0.25s;
+}
+
+.button--normal:hover {
+	background: red;
+}
+
+.button--hollow {
+	padding: 1em 2em;
+	border: 1px solid #000;
+	width: max-content;
+}
+
+.button--hollow:hover {
+	background: black;
+	color: orange;
+}
+
+.field {
+	display: flex;
+}
+
+/* CONTAINER STYLES */
+
+/* 🕮 <ltc> fb8696bc-c44b-4fd5-9361-16f5e966ade0.md */
+.--input--normal {
+	padding: 1em 1.5em;
+	font-style: italic;
+	color: grey;
+	font-family: Lato, sans-serif;
+}
+
+/* container with limited width */
+.l-container--narrow {
+	max-width: 1200px;
+	width: 100%;
+	justify-self: center;
+}
+
+/* big container that spans the whole width of the page */
+.l-container--outer {
+	justify-self: center;
+	width: 100%;
+}
+
+/* adds safety margin on sides */
+.--padded {
+	width: calc(100% - 2rem);
+}
+
+.l-core {
+	justify-self: center;
+}
+
+.--fa-icon--small::before {
+	display: inline-flex;
+	width: 2em;
+	height: 2em;
+	background: #333;
+	color: #f48e0e;
+	vertical-align: middle;
+	margin-right: 1em;
+	justify-content: center;
+	align-items: center;
+}
+
+.--magnifier {
+	overflow: hidden;
+}
+.--magnifier img {
+	transition: transform 0.5s;
+}
+.--magnifier:hover img {
+	transform: scale(1.2);
+}
+
+.l-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/* 🕮 <ltc> bb908bf2-5493-4d8c-a728-d5cd3fcd654c.md */
+}

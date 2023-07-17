@@ -1,0 +1,31 @@
+/* auto-fill grid example; we want our items to be constant size in this case */
+.Team__gallery {
+	/* set max size no bigger then the actual picture size to avoid blurring */
+	grid-template-columns: repeat(auto-fill, 182px);
+	gap: 0.5em;
+	font-size: 0.8rem;
+	/* place-content: center; */
+	/* 🕮 <ltc> 0a207106-0268-4b64-a086-95439eee4470.md */
+}
+
+.Team .gallery__item {
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+
+.Team .card__name {
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	bottom: 10%;
+}
+
+.Team .card {
+	overflow: hidden;
+	/* 🕮 <ltc> 07f98c6c-b256-4ba0-b47e-994c2d3200ef.md */
+}
+
+.Team .card__photo {
+	aspect-ratio: 1;
+	object-fit: cover;
+}

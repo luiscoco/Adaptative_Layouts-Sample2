@@ -1,0 +1,19 @@
+.Portfolio .chapter__main {
+	display: grid;
+	gap: 2rem;
+}
+
+.Portfolio .bar {
+	justify-self: center;
+	justify-content: space-evenly;
+}
+
+.Portfolio__gallery {
+	grid-template-columns: repeat(auto-fit, minmax(100px, 280px));
+	/* 🕮 <ltc> 8aba4402-577f-4903-bffb-6b4046dc77ce.md */
+	gap: 1em;
+}
+
+.Portfolio li img {
+	max-width: 100%;
+}

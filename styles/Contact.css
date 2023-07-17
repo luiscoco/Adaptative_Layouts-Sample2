@@ -1,0 +1,104 @@
+.Contact .button--normal {
+	text-transform: uppercase;
+}
+
+.Contact .chapter__main {
+	display: grid;
+	grid:
+		'message in-touch' min-content
+		'message follow' min-content
+		/ 1fr 1fr;
+	column-gap: 6vw;
+	row-gap: 2.5rem;
+	align-items: center;
+	/* align-content: space-evenly; */
+	align-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	.Contact .chapter__main {
+		grid:
+			'in-touch' min-content
+			'message' min-content
+			'follow' min-content
+			/ 1fr;
+	}
+}
+
+@media screen and (min-width: 600px + 1px) {
+	.Contact .chapter__main {
+		grid:
+			'in-touch' min-content
+			'message' min-content
+			'follow' min-content
+			/ 1fr;
+	}
+}
+
+.Message {
+	display: grid;
+	gap: 2em;
+	grid-area: message;
+}
+
+.InTouch {
+	grid-area: in-touch;
+	align-self: start;
+}
+
+.Follow {
+	grid-area: follow;
+	align-self: end;
+}
+
+.InTouch,
+.Follow {
+	display: grid;
+	grid-auto-rows: min-content;
+	gap: 2em;
+}
+
+.InTouch address {
+	display: grid;
+	gap: 1em;
+}
+
+.socials {
+	display: flex;
+}
+
+.socials li:not(:last-child) {
+	margin-right: 0.5em;
+	/* border: 1px solid red; */
+}
+
+.socials a {
+	display: flex;
+}
+
+.Follow span.fab::before {
+	width: 2em;
+	height: 2em;
+	background: #f48e0e;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	color: white;
+}
+
+.contactForm {
+	display: grid;
+	gap: 1em;
+}
+
+.contactForm__buttons,
+.contactForm .field {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.contactForm .field input {
+	flex: auto;
+}

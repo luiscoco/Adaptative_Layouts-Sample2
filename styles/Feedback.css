@@ -1,0 +1,70 @@
+.Feedback__gallery {
+	display: grid;
+	gap: 2em;
+	grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+.Cite {
+	text-align: justify;
+}
+
+.Cite footer {
+	margin-top: 3em;
+	display: flex;
+}
+
+.Cite img {
+	flex: none;
+	align-self: flex-start;
+}
+
+.Cite__decoration {
+	color: orange;
+	font-size: 3.5em;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+
+.Cite__decoration::after {
+	content: '';
+	display: block;
+	width: 100%;
+	border: 2px solid orange;
+	position: absolute;
+	bottom: 30%;
+}
+
+.Cite__decoration .fa::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: left 0.5s;
+	z-index: 1;
+	padding: 10px;
+	font-size: 45px;
+	display: block;
+	background: white;
+}
+
+.Cite__decoration:hover .fa::before {
+	left: calc(100% - 65px);
+}
+
+.Cite__author {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+}
+
+.Cite__author span:first-of-type {
+	color: black;
+}
+.Cite__author span:last-of-type {
+	font-weight: 300;
+}
+
+.footer {
+	padding: 20px;
+	display: grid;
+	justify-items: center;
+}

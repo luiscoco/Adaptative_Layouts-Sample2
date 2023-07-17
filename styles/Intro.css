@@ -1,0 +1,73 @@
+.Intro .banner {
+	background: url('../img/intro.jpg');
+	background-size: cover;
+	/* 🕮 <ltc> df69c2f3-c5b9-46a8-8a7f-d79c4fc84728.md */
+	color: white;
+	position: relative;
+
+	font-size: 1rem;
+}
+
+.Intro .banner__text {
+	position: absolute;
+	left: 20%;
+	bottom: 15%;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 2em;
+	border-radius: 1em;
+}
+
+/* Switch modes */
+@media screen and (min-width: 801px) {
+	.Intro .banner {
+		aspect-ratio: 16/9;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.Intro .banner {
+		display: grid;
+		place-content: center;
+		padding: 2em;
+		height: 100vh;
+		text-align: center;
+	}
+
+	.Intro .banner__text {
+		position: static;
+	}
+}
+
+.Intro .banner__h {
+	font-size: 2em;
+	line-height: 0.8;
+	/* 🕮 <ltc> 3d7fcfe2-7baa-4609-b47d-bd5399592aae.md */
+}
+
+.Intro .banner__about {
+	text-transform: capitalize;
+	margin: 2em 0;
+}
+
+.Intro .banner__about span {
+	text-transform: uppercase;
+}
+
+.Intro .banner__slogan {
+	font-size: 2.5em;
+	line-height: 1;
+	/* 🕮 <ltc> 756dbd39-9d0e-4cf0-bab6-a4b033a3387b.md */
+}
+
+.Intro .banner__slogan span {
+	margin-right: 0.5em;
+}
+
+/* because all sub-elements of our banner use em unit,
+we can control scaling  by changing font-size on .banner element
+ */
+@media screen and (max-width: 1200px) {
+	.Intro .banner {
+		font-size: 0.75rem;
+	}
+}

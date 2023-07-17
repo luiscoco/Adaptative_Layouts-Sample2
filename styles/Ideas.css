@@ -1,0 +1,11 @@
+.Ideas .banner {
+	height: 380px;
+	justify-self: stretch;
+	background: url('../img/ideas.jpg') fixed;
+	display: grid;
+	place-content: center;
+}
+
+.banner__text {
+	color: white;
+}
